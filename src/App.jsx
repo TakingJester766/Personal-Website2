@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+import About from './About'
+
 function App() {
   
-
+  const [hasClickedView, setHasClickedView] = useState(false);
 
 
   return (
@@ -15,7 +17,7 @@ function App() {
         <h1 className="text-xl font-bold">Alex Zimmerman</h1>
       </header>
       
-      <div className='flex flex-col items-center justify-center min-h-screen py-2'>
+      { hasClickedView ? <About /> : <div className='flex flex-col items-center justify-center min-h-screen py-2'>
 
         <div className='flex flex-col items-center justify-center w-full flex-1 px-20 text-center'>
           <h1 className='text-6xl font-bold'>
@@ -23,10 +25,8 @@ function App() {
           </h1>
 
           <div className='flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full'>
-            <a
-              href='https://reactjs.org/'
-              target='_blank'
-              rel='noopener noreferrer'
+            <button
+              onClick={() => setHasClickedView(true)}
               className='p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600'
 
             >
@@ -37,14 +37,14 @@ function App() {
                 Ambission, drive, and a passion for learning
               </p>
 
-            </a>
+            </button>
 
           </div>
           
         
-      </div>
+      </div> 
 
-      </div>
+      </div>}
 
       
           

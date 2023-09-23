@@ -13,15 +13,35 @@ function App() {
 
   return (
     <div>
+      
+      
+      { hasClickedView ?
+      
+      <div>
+
+        <header className="text-center bg-blue-500 text-white py-4">
+            <h1 className="text-xl font-bold">Alex Zimmerman</h1>
+        </header> 
+      
+        <div className='flex flex-col items-center justify-center min-h-screen py-2'>
+          <About /> 
+        </div>
+
+      </div>
+      
+      : 
+      
+      <div>
+
       <header className="text-center bg-blue-500 text-white py-4">
         <h1 className="text-xl font-bold">Alex Zimmerman</h1>
       </header>
-      
-      { hasClickedView ? <About /> : <div className='flex flex-col items-center justify-center min-h-screen py-2'>
+
+      <div className='flex flex-col items-center justify-center min-h-screen py-2'>
 
         <div className='flex flex-col items-center justify-center w-full flex-1 px-20 text-center'>
           <h1 className='text-6xl font-bold'>
-            Welcome to my <span className='text-blue-600'>Personal Site</span>
+            Hi, I'm Alex. Welcome to my <span className='text-blue-600'>Personal Site</span>
           </h1>
 
           <div className='flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full'>
@@ -44,10 +64,13 @@ function App() {
         
       </div> 
 
+      </div>
+
       </div>}
 
       
           
+
     </div>
   )
 }

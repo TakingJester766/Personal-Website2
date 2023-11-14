@@ -9,14 +9,23 @@ function About() {
             
 
             {/* for me img */}
-            <div className='flex flex-row justify-center'>
-                <img src={me} alt="me" className='w-3/5' />
-            </div>
+            
 
             <div className='w-full'>
-                <h1 className='font-bold text-4xl'>
-                    Hi, I'm Alex Zimmerman
+                <h1 className='font-bold text-4xl text-white p-4'>
+                    Hi, I'm Alex.
                 </h1>
+                <h1 className= 'font-semibold text-xl text-white'>
+                    I'm a finance/comp-sci student at the University of Massachusetts, Amherst.
+                </h1>
+
+                <h1 className= 'font-semibold text-xl text-white py-1'>
+                    Click the links below to see what I'm up to.
+                </h1>
+            </div>
+
+            <div className='flex flex-row justify-center w-1/2'>
+                <img src={me} alt="me" className='w-full' />
             </div>
             
 

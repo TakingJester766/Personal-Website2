@@ -14,10 +14,9 @@ function App() {
 
 
   return (
-    <div>
+    <div className='bg-slate-600'>
       
       
-    
       
       <div>
 
@@ -34,9 +33,7 @@ function App() {
       
       
 
-      <header className="text-center bg-blue-500 text-white py-4">
-        <h1 className="text-xl font-bold">Alex Zimmerman</h1>
-      </header>
+      
 
       
 
